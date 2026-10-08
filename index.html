@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Unbounded:wght@200..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<main>
+			<section class="hero">
+				<div class="container hero__container">
+					<div class="hero__texts">
+						<h1 class="hero__title">Привіт, я Іван 👋</h1>
+						<span class="hero__subtitle">Створюю сайти, які продають</span>
+						<div class="hero__list">
+							<ul class="hero__notes">
+								<li>
+									Я початківець Front-End Developer, який створює сучасні та
+									зручні вебсайти.
+								</li>
+								<li>
+									Працюю з HTML, CSS та JavaScript і постійно вдосконалюю свої
+									навички, створюючи власні проєкти.
+								</li>
+							</ul>
+						</div>
+						<div class="hero__button">
+							<a class="btn hero__ghost" href="#about">Про мене</a>
+							<a class="btn hero__primary" href="#order">Замовити сайт</a>
+						</div>
+					</div>
+					<div class="hero__img">
+						<img src="asetts/hero-photo.png" alt="" />
+					</div>
+				</div>
+			</section>
+
+			<section class="about" id="about">
+				<div class="container about__container">
+					<div class="about__texts">
+						<h2 class="about__title">Про мене</h2>
+						<div class="about__subtitle">
+							<p>
+								Я цікавлюся веброзробкою та дизайном сайтів. Мені подобається
+								перетворювати ідеї на реальні вебсторінки та працювати над їхнім
+								виглядом, структурою й адаптивністю.
+							</p>
+							<p>
+								Зараз я активно навчаюся, практикуюся на власних проєктах і
+								поступово освоюю нові технології.
+							</p>
+							<span
+								>Моя мета — розвиватися у Front-End розробці та створювати
+								якісні сучасні сайти.</span
+							>
+						</div>
+					</div>
+					<div class="about__codes">
+						<pre class="code" aria-label="Мої навички у вигляді коду">
+					 <b>const</b> <i>ivan</i> = {
+                       role: <em>"Front-End Developer"</em>,
+                       stack: [<em>"HTML"</em>, <em>"CSS"</em>, <em>"JavaScript"</em>],
+                       focus: <em>"адаптивність"</em>,
+                       learning: <b>true</b>,
+                       openToOrders: <b>true</b>};
+
+						};</pre>
+					</div>
+				</div>
+			</section>
+
+			<section class="form" id="order">
+				<div class="container form__container">
+					<h2 class="form__title">Хочете сайт? Напишіть мені</h2>
+					<form class="order" id="orderForm" novalidate>
+						<input
+							class="input"
+							name="name"
+							type="text"
+							placeholder="Ваше ім’я"
+							autocomplete="name"
+							required
+						/>
+						<input
+							class="input"
+							name="contact"
+							type="text"
+							placeholder="Telegram або email"
+							required
+						/>
+						<button class="btn hero__primary" type="submit">
+							Замовити сайт
+						</button>
+					</form>
+					<p class="form__msg" id="formMsg" role="status"></p>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<section class="footer">
+				<div class="container">
+					<ul>
+						<li><a href="https://t.me/your_username">Telegram</a></li>
+						<li><a href="mailto:ivan@example.com">Email</a></li>
+						<li><a href="https://github.com/your_username">GitHub</a></li>
+						<li>
+							<a href="https://linkedin.com/in/your_username">LinkedIn</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</footer>
+	</body>
+</html>
